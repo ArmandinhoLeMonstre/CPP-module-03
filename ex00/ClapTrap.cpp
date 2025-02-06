@@ -36,8 +36,11 @@ ClapTrap &	ClapTrap::operator=(ClapTrap const &assign) {
 void	ClapTrap::attack(const std::string& target) {
 
 	if (this->_Energy_points == 0)
+	{
 		std::cout << "There is no energy left, ClapTrap cannot do anything" << std::endl;
-	if (this->_Hit_points == 0)
+		return ;
+	}
+	else if (this->_Hit_points == 0)
 	{
 		std::cout << "There is no Hp left, ClapTrap cannot do anything" << std::endl;
 	}
