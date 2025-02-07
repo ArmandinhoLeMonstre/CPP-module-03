@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/07 09:57:57 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/07 11:01:34 by armitite         ###   ########.fr       */
+/*   Created: 2025/02/07 09:58:07 by armitite          #+#    #+#             */
+/*   Updated: 2025/02/07 12:02:21 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ private:
 
 	std::string _name;
 	int _Hit_points;
-	unsigned int _Energy_points;
-	unsigned int _Attack_damage;
+	int _Energy_points;
+	int _Attack_damage;
 
 public:
 
@@ -32,10 +32,13 @@ public:
 
 	ClapTrap & operator=(ClapTrap const &assign);
 
-	void attack(const std::string& target);
-	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
-
+	void	attack(const std::string& target);
+	void	takeDamage(unsigned int amount);
+	void	beRepaired(unsigned int amount);
+	void	setName(std::string name);
+	void	setHitPoints(int amount);
+	void	setEnergyPoints(int amount);
+	void	setAttackDamage(int amount);
 };
 
 #endif

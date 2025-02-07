@@ -5,39 +5,47 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/07 09:58:00 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/07 11:13:26 by armitite         ###   ########.fr       */
+/*   Created: 2025/02/07 09:57:50 by armitite          #+#    #+#             */
+/*   Updated: 2025/02/07 12:09:21 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 #include <iostream>
 
 int	main(void)
 {
-	ClapTrap	b;
 	ClapTrap	a("Test");
+	// ClapTrap	b;
+	ScavTrap	Scav("Groom");
 	std::string ennemy = "Harold";
 
-	std::cout << "/--------------------------------------------/" << std::endl;
+	std::cout << "/----------------Attacking--------------/" << std::endl;
 	//Attacking
-	a.attack(ennemy);
-	b.attack(ennemy);
-	std::cout << "/--------------------------------------------/" << std::endl;
+	// a.attack(ennemy);
+	// b.attack(ennemy);
+	Scav.attack(ennemy);
+	std::cout << "/--------------Taking Damage-----------------/" << std::endl;
 	//Taking Damage
-	a.takeDamage(5);
-	a.takeDamage(5);
-	a.attack(ennemy);
-	a.takeDamage(5);
-	std::cout << "/--------------------------------------------/" << std::endl;
+	// a.takeDamage(5);
+	Scav.takeDamage(5);
+	Scav.takeDamage(5);
+	// a.takeDamage(5);
+	// a.attack(ennemy);
+	// a.takeDamage(5);
+	std::cout << "/--------------Reparation----------------/" << std::endl;
 	//Being repaired
-	a.beRepaired(5);
-	a.takeDamage(5);
-	a.beRepaired(1);
-	std::cout << "/--------------------------------------------/" << std::endl;
+	Scav.beRepaired(5);
+	Scav.takeDamage(5);
+	Scav.beRepaired(1);
+	std::cout << "/------------------Energy---------------/" << std::endl;
 	//Energy
-	for (int i = 0; i < 10; i++)
-		a.attack("Loser");
+	Scav.setEnergyPoints(0);
+	Scav.attack("Loser");
+	std::cout << "/----------------Guard gate------------------/" << std::endl;
+	//Guard Gate
+	Scav.guardGate();
+	//a.GuardGate();
 	std::cout << "/--------------------------------------------/" << std::endl;
 	return (0);
 }
