@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 10:00:41 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/07 10:54:50 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 15:00:28 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,6 @@
 #include "ClapTrap.hpp"
 
 class ScavTrap : public ClapTrap {
-
-private:
-	
-	std::string _name;
-	int _Hit_points;
-	unsigned int _Energy_points;
-	unsigned int _Attack_damage;
 
 public:
 

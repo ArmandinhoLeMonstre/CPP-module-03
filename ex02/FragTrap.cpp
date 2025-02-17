@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 12:23:22 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/07 14:42:10 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 15:16:57 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,12 +85,12 @@ void	FragTrap::attack(const std::string& target) {
 void	FragTrap::highFivesGuys(void) {
 
 	std::string input;
-	while (input != "High five")
-	{
-		std::cout << "FragTrap, High five request :";
-		std::getline (std::cin, input);
-	}
-	std::cout << "Yeah !" << std::endl;
+	std::cout << "FragTrap, High five request : ";
+	std::getline (std::cin, input);
+	if (input == "High five")
+		std::cout << "Yeah !" << std::endl;
+	else
+		std::cout << "No high five then..." << std::endl;
 	return ;
 	
 }

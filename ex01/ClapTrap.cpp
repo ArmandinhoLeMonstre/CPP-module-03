@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 09:58:04 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/07 12:07:14 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 15:09:13 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ ClapTrap::ClapTrap(void) {
 
 	std::cout << "ClapTrap Contructor called" << std::endl;
 	this->_name = "Unnamed";
-	this->_Attack_damage = 0;
-	this->_Hit_points = 10;
-	this->_Energy_points = 10;
+	this->_Attack_damage = 20;
+	this->_Hit_points = 100;
+	this->_Energy_points = 50;
 	
 	return ;
 }
@@ -27,9 +27,9 @@ ClapTrap::ClapTrap(void) {
 ClapTrap::ClapTrap(std::string name) : _name(name) {
 
 	std::cout << "ClapTrap name Contructor called" << std::endl;
-	this->_Attack_damage = 0;
-	this->_Hit_points = 10;
-	this->_Energy_points = 10;
+	this->_Attack_damage = 20;
+	this->_Hit_points = 100;
+	this->_Energy_points = 50;
 
 	return ;
 }

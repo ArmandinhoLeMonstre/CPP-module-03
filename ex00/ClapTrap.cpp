@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 09:57:54 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/07 11:09:20 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 14:44:12 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,7 @@ ClapTrap::ClapTrap(std::string name) : _name(name) {
 ClapTrap::ClapTrap(ClapTrap const &copy) {
 
 	std::cout << "ClapTrap copy Contructor called" << std::endl;
-	this->_name = copy._name;
-	this->_Attack_damage = copy._Attack_damage;
-	this->_Hit_points = copy._Hit_points;
-	this->_Energy_points = copy._Energy_points;
+	*this = copy;
 
 	return ;
 }

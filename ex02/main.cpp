@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 09:57:50 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/07 12:35:39 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 15:16:24 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int	main(void)
 	ClapTrap	a("Test");
 	// ClapTrap	b;
 	FragTrap	Frag("Foo");
+	ScavTrap	Scav("Groom");
 	std::string ennemy = "Harold";
 
 	std::cout << "/----------------Attacking--------------/" << std::endl;
@@ -26,11 +27,13 @@ int	main(void)
 	// a.attack(ennemy);
 	// b.attack(ennemy);
 	Frag.attack(ennemy);
+	Scav.attack(ennemy);
 	std::cout << "/--------------Taking Damage-----------------/" << std::endl;
 	//Taking Damage
 	// a.takeDamage(5);
 	Frag.takeDamage(5);
 	Frag.takeDamage(5);
+	Scav.takeDamage(5);
 	// a.takeDamage(5);
 	// a.attack(ennemy);
 	// a.takeDamage(5);

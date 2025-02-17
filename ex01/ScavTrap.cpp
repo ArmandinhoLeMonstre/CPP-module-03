@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 10:00:38 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/07 12:03:27 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 15:08:20 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,6 @@ ScavTrap::ScavTrap(std::string name) {
 
 	std::cout << "ScavTrap name Contructor called" << std::endl;
 	setName(name);
-	setAttackDamage(20);
-	setHitPoints(100);
-	setEnergyPoints(50);
 
 	return ;
 }
@@ -72,7 +69,7 @@ void	ScavTrap::attack(const std::string& target) {
 	}
 	else
 	{
-		std::cout << "ScavTrap " << this->_name << " attacks " << target;
+		std::cout << "ScavTrap " << this->_name << " hits super hard " << target;
 		std::cout << ", causing " << this->_Attack_damage << " points of damage !";
 		std::cout << std::endl;
 		this->_Energy_points--;
@@ -83,7 +80,7 @@ void	ScavTrap::attack(const std::string& target) {
 
 void	ScavTrap::guardGate(void) {
 
-	std::cout << "ScavTrap " << this->_name << "is now in Gate keeper mode" << std::endl;
+	std::cout << "ScavTrap " << this->_name << " is now in Gate keeper mode" << std::endl;
 
 	return ;
 	

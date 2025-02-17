@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 12:23:25 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/07 12:24:58 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 15:00:11 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,6 @@
 #include <iostream>
 
 class FragTrap : public ClapTrap {
-
-private:
-	
-	std::string _name;
-	int _Hit_points;
-	unsigned int _Energy_points;
-	unsigned int _Attack_damage;
 
 public:
 

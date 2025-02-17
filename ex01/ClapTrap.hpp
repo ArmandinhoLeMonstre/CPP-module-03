@@ -6,7 +6,7 @@
 /*   By: armitite <armitite@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 09:58:07 by armitite          #+#    #+#             */
-/*   Updated: 2025/02/07 12:02:21 by armitite         ###   ########.fr       */
+/*   Updated: 2025/02/17 14:46:13 by armitite         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 class ClapTrap {
 
-private:
+protected:
 
 	std::string _name;
 	int _Hit_points;
